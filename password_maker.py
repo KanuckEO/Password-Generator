@@ -1,95 +1,105 @@
-characters = ["!  "     
-             
-       "#"    
-      " $"       
-   "   % "      
-    " &"       
-    "'"       
-       "("       
-  " )  "     
-  " * "      
-    " +"       
-       ",    "   
-  " -   "         
-     "  /  "     
-   "  0    "   
-   "    1    "   
-     "  2   "    
-   "  3  "     
-    "   4    "   
-   "  5      " 
-     "  6   "    
-   "   7     "  
-   "    8    "   
- "      9     "  
-    "   :   "    
-    "   ;  "     
-   "    <   "    
-   "   =    "   
-   "    > "      
-    "   ? "      
- "      @  "     
-      " A  "     
-     "  B  "     
-     "  C "      
-    "   D "      
-  "    E "      
- "     F "      
-    "  G"       
-    "  H  "     
-     "  I  "     
- "   J   "    
-  "  K   "    
-   "   L"       
- "    M "      
-      " N  "     
-   "    O     "  
-    "P    "   
-       "Q"       
-       "R"       
-       "S"       
-       "T"       
-       "U"       
-       "V"       
-       "W"       
-      "X"       
-       "Y"       
-    "Z"       
-      " [  "            
-      " ] "      
-     "  ^"       
-     " _ "      
-     " ` "      
-     " a   "    
-    " b "      
-     " c "      
-    " d    "   
-  "   e "      
-   "  f   "    
-  "   g  "     
-   " h  "     
-  "  i  "     
-  "  j  "     
-  "  k  "     
- "   l  "     
-  "   m "      
-  " n  "     
-    "  o "      
-    " p "      
-   " q"       
-    "r"       
-    "  s  "     
-  "    t  "     
-    "  u  "     
-  "  v   "    
-  "  w    "   
-  "  x   "   
-    " y "      
-      "z "      
- "{"       
-      "|"       
-   "}"       
-      "~"    ]
+def password_maker():
+    
+    characters=[
+    "!",    
+    "#",    
+    "$",
+    "%",
+    "&",
+    "'",
+    "(",
+    ")",
+    "*",
+    "+",
+    ",",
+    "-",
+    "/",
+    "0",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    ":",
+    ";",
+    "<",
+    "=",
+    ">",
+    "?",
+    "@",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "[",
+    "]",
+    "^",
+    "_",
+    "`",
+    "a",
+    "b",
+    "c",
+    "d",
+    "e",
+    "f",
+    "g",
+    "h",
+    "i",
+    "j",
+    "k",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "u",
+    "v",
+    "w",
+    "x",
+    "y",
+    "z",
+    "{",
+    "|",
+    "}",
+    "~"]
 
-      for i in range (0, 94)
-        print(characters[i])
+    import random
+
+
+    print("Welcome to password maker")
+    char = int(input("How many charecters would you like in your password: "))
+    print("Your password is: ", end='')
+    for i in range(0,char):
+        print(characters[random.randrange(1,91)], end='',)
+    print("")
+    print("Thank you for using Password Maker, see you next time!")
